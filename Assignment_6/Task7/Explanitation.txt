@@ -1,0 +1,24 @@
+1. Without Setting LD_LIBRARY_PATH
+
+    error while loading shared libraries: Server.so: cannot open shared object file: No such file or directory
+    When you execute ./Myexe, the dynamic loader search the library in same folder
+
+    
+
+2. With Setting LD_LIBRARY_PATH
+
+    export LD_LIBRARY_PATH=/home/prasad/Desktop/LSP/Assignments/Assignment_6:$LD_LIBRARY_PATH
+    ./Myexe
+
+    Successfully finds the path to the LD_LIBRARY_PATH
+    
+    RPATH
+
+    LD_LIBRARY_PATH → finds . (current directory)
+
+    Loader loads libmylib.so
+
+    Resolves display() symbol
+
+    Program executes normally
+        

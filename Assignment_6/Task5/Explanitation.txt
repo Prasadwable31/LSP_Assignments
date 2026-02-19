@@ -1,0 +1,14 @@
+1. RTLD_LAZY
+
+    when we load the library using it .It check for the function in shared library (.so) if its not available it shows error
+    Error LAZY : ./Server.so: undefined symbol: Additions
+    at the time of function call
+
+2. RTLD_NOW
+
+    when we load the library using it. at the time of loading it check the all function that we call further is been check in (.so)
+    if its not there it directly generate the Segmentation fault
+
+    happen at the time of loading library
+
+    
